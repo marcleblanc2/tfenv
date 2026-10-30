@@ -86,3 +86,5 @@ jobs:
           expect=1.2.3;
           got="$(docker run -e "TFENV_TERRAFORM_VERSION=${expect}" tfenv-terraform:latest version)";
           echo "${got}" | tee /dev/stderr | grep -e 'Terraform v1.2.3'
+
+# CI diagnostic: touch to register workflow on fork (throwaway branch)
